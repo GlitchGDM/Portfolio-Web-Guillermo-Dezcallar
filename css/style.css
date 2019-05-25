@@ -44,12 +44,10 @@ h1{
   }
 
   .features ul li figure {
-    border-radius: 50%;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.3);
+    margin-left: 1rem;
   }
   .img_grid{
     max-width: 100%;
@@ -80,20 +78,17 @@ h1{
     padding-top: 20%;
     margin-left: 60px;
     margin-right: 60px;
-    padding-bottom:60px;
+    margin-bottom: 60px;
   }
-
-
   .main_image{
     position: absolute;
     width: 100%;
-    padding-bottom: 100%;
+
   }
   .overlay_image{
     position: absolute;
     width: 15%;
     height: auto;
-    padding-bottom: 100%;
     padding-left: 5%;
     padding-top: 2%;
   }
@@ -107,8 +102,6 @@ h1{
     width: 10%;
     right: 10%;
   }
-
-
 #main_footer{
   background-color: #181819;
 }
@@ -143,12 +136,33 @@ h1{
     margin: 0 auto;
   }
 
+
+  .cvdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .cvdiv p{
+    margin-left: 60px;
+  }
   .cvtext{
     background-color: #808080;
     margin-left: 100px;
     max-width: 800px;
   }
-
+  .cvtext article{
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:30px;
+  }
+  .img_cv{
+    margin-right: 200px;
+  }
+  .img_cv ul{
+    list-style-type: none;
+  }
 
 
 
