@@ -83,7 +83,6 @@ h1{
   .main_image{
     position: absolute;
     width: 100%;
-
   }
   .overlay_image{
     position: absolute;
@@ -135,8 +134,6 @@ h1{
     align-items: center;
     margin: 0 auto;
   }
-
-
   .cvdiv{
     display: flex;
     justify-content: space-between;
@@ -158,13 +155,26 @@ h1{
     margin-bottom:30px;
   }
   .img_cv{
+    margin-left: 50px;
     margin-right: 200px;
   }
   .img_cv ul{
     list-style-type: none;
   }
 
+  .img_set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
 
+  .img_set ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.9rem;
+  }
 
 
 
