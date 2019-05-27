@@ -18,6 +18,26 @@ h1{
 }*/
 
 @media (min-width: 960px){
+  body{
+    background: url("../img/background-image.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      /*background-image: linear-gradient(to right, #28B463, #2ECC71, #28B463, #2ECC71, #28B463, #2ECC71, #28B463);
+
+     background-image: url("../img/background-image.png");*/
+  }
+  bg{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
   .containerportfolio{
     width: 100%;
   }
@@ -103,6 +123,7 @@ h1{
   }
 #main_footer{
   background-color: #181819;
+  margin-top:-40px;
 }
 
 #main_footer ul{
@@ -114,17 +135,17 @@ h1{
   margin-top: 50px;
   margin-bottom:50px;
 }
-  .x{
+  .footer_distribution{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
   }
-  .x p{
+  .footer_distribution p{
     margin-left: 60px;
     margin-right: 150px;
   }
-  .x a{
+  .footer_distribution a{
     margin-left: -40px;
     margin-right: 60px;
   }
