@@ -1,0 +1,27 @@
+@font-face{
+  font-family: "Cairo";
+  src: url("../fonts/Cairo-Regular.woff")
+}
+
+@font-face{
+  font-family: "FrancoisOne";
+  src: url("../fonts/FrancoisOne-Regular.woff")
+}
+
+h1{
+  font-family: "FrancoisOne";
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p{
+  font-family: "Cairo";
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer_distribution p{
+  font-family: "Cairo";
+  font-size: 1rem;
+}

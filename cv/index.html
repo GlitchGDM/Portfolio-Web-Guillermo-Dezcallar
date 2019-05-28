@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>CV</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
@@ -12,7 +13,7 @@
           <img src="../img/banner-header.png" class="main_image">
           <a href="../index.html" title="Portfolio"><img src="../img/profile-photo.png" width="250px" height="250px" class="overlay_image"></a>
       </div>
-      <div class="containerheader">
+      <div class="container_header">
         <nav>
           <ul>
             <li><a href="../index.html" title="Portfolio"><img src="../img/portfolio-button.png" class="banner_button_portfolio"></a></li>
@@ -30,8 +31,8 @@
               <p><strong>2001-2015:</strong> Montessori School, Alpedrete, Madrid. GCE A ¬ AS Level (Bachillerato británico, pruebas realizadas por la Universidad de Cambridge).</p>
               <h1>Idiomas</h1>
               <p><strong>Inglés:</strong> Bilingüe Inglés-Español.</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012 - FCE (First Certificate in English).</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014 - CAE (Certificate of Advanced English).</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012 - FCE (First Certificate in English).</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014 - CAE (Certificate of Advanced English).</p>
               <p><strong>Frances:</strong> Básico. Dos años como asignatura opcional.</p>
               <h1>Ofimática</h1>
               <p><strong>Paquete Office:</strong> Nivel avanzado.</p>
@@ -49,11 +50,11 @@
               <p>Coleccionismo de cartas Magic: The Gathering</p>
             </article>
           </div>
-        <div class="img_cv">
+        <div id="cv_download" class="img_cv">
           <ul>
-            <li><img src="../img/example_miniature.png" width="400px"></li>
-            <li><img src="img/button-download-pdf.png" width="400px"></li>
-            <li><img src="img/button-download-png.png" width="400px"></li>
+            <li><img src="../img/miniature-cv.png" width="400px"  class="img_blur img_shadow_miniature"></li>
+            <li><img src="img/button-download-pdf.png" width="400px" class="img_shadow_button"></li>
+            <li><img src="img/button-download-png.png" width="400px" class="img_shadow_button"></li>
           </ul>
         </div>
       </div>
@@ -67,13 +68,25 @@
           </nav>
           <nav>
             <ul>
-              <li><a href="" target="_blank"><img src="../img/icon-gmail.png" alt="" width="50px"></a></li>
-              <li><a href="" target="_blank"><img src="../img/icon-linkedin.png" alt="" width="50px"></a></li>
-              <li><a href="" target="_blank"><img src="../img/icon-itchio.png" alt="" width="50px"></a></li>
-              <li><a href="" target="_blank"><img src="../img/icon-twitter.png" alt="" width="50px"></a></li>
+              <li><a href="mailto:guilledezcallar@gmail.com" target="_blank"><img src="../img/icon-gmail.png" alt="" width="50px"></a></li>
+              <li><a href="https://es.linkedin.com/in/guillermo-francisco-dezcallar-mangas-296899152" target="_blank"><img src="../img/icon-linkedin.png" alt="" width="50px"></a></li>
+              <li><a href="https://guillermodezcallar.itch.io/" target="_blank"><img src="../img/icon-itchio.png" alt="" width="50px"></a></li>
+              <li><a href="https://twitter.com/Glitch_GDM" target="_blank"><img src="../img/icon-twitter.png" alt="" width="50px"></a></li>
             </ul>
           </nav>
         </div>
     </footer>
+    <script>
+      window.onscroll = function() {downloadSticky()};
+      var download = document.getElementById("cv_download");
+      var sticky = download.offsetTop;
+      function downloadSticky() {
+        if (window.pageYOffset >= sticky) {
+          download.classList.add("sticky")
+        } else {
+          download.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
